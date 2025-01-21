@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg row">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="../assets/imgs/Netflix_Logo_RGB.png" alt="Netflix logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation"> <!-- hambueger menu -->
@@ -20,61 +20,35 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown"> <!-- browse page -->
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#Recommended" role="button"
+                        <li class="nav-item dropdown"> <!-- home -->
+                            <a class="nav-link dropdown-toggle" aria-current="page" href="#TV shows" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Browse
+                                home
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown"> <!-- Landings -->
+                        <li class="nav-item dropdown"> <!-- tv shows -->
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Landings
+                                TV shows
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown"> <!-- Pages -->
+                        <li class="nav-item dropdown"> <!-- movies -->
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Pages
+                                movies
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown"> <!-- Accounts -->
+                        <li class="nav-item dropdown"> <!-- recently -->
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Accounts
+                                recently added
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        </li>
+                        <li class="nav-item dropdown"> <!-- my list -->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                my list
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +64,36 @@
         </nav>
     </header>
     <main>
+<section id="filterBar"></section>
+<section id="recommended" class="container p-5">
+    <div class="row">
+        <h2>trending now</h2>
+        <div id="TrendingCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item d-flex">
+                    <div class="movieCard card">
+                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow carousel-control-prev" type="button" data-bs-target="#recommendedCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="arrow carousel-control-next" type="button" data-bs-target="#recommendedCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
+    </div>
+</section>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
