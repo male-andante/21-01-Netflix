@@ -8,7 +8,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/netflix.css">
 </head>
-<body class="mx-2 bg-dark">
+<body class="mx-2 bg-black">
     <header>
         <nav class="navbar navbar-expand-lg row">
             <div class="container-fluid">
@@ -83,14 +83,13 @@
         </div>
       </nav>
 </section>
-<section id="trending" class="container-fluid">
+<section id="trending" class="movieSection container-fluid">
     <div class="row">
         <h2>trending now</h2>
-        <div id="trendingCarousel" class="carousel slide">
+        <div id="trendingCarousel" class="movieCarousel carousel slide">
             <div class="carousel-inner d-flex">
                 <div class="carousel-item active d-flex">
                     <div class="movieCard card col-lg-2 col-md-6 col-12"> <!-- card 1 -->
-                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
                         <div class="card-body">
                             <img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">
                             <h5>new episodes</h5>
@@ -103,7 +102,6 @@
                         </div>
                     </div>
                     <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 3 -->
-                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
                         <div class="card-body">
                             <img src="../assets/imgs/movies/3.png" class="card-img-top" alt="...">
                             <h5>new episodes</h5>
@@ -116,7 +114,6 @@
                         </div>
                     </div>
                     <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 5 -->
-                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
                         <div class="card-body">
                             <img src="../assets/imgs/movies/5.png" class="card-img-top" alt="...">
                             <h5>new episodes</h5>
@@ -136,7 +133,7 @@
                     </div>
                     <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 8 -->
                         <div class="card-body">
-                            <img src="../assets/imgs/movies/7.png" class="card-img-top" alt="...">
+                            <img src="../assets/imgs/movies/8.png" class="card-img-top" alt="...">
                             <h5>new episodes</h5>
                         </div>
                     </div>
@@ -148,6 +145,146 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="arrow carousel-control-next" type="button" data-bs-target="#trendingCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</section>
+<section id="watchAgain" class="movieSection container-fluid">
+    <div class="row">
+        <h2>whatch it again</h2>
+        <div id="watchAgainCarousel" class="movieCarousel carousel slide">
+            <div class="carousel-inner d-flex">
+                <div class="carousel-item active d-flex">
+                    <div class="movieCard card col-lg-2 col-md-6 col-12"> <!-- card 1 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/8.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 2 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/9.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 3 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/10.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 4 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/11.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 5 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 6 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/4.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 7 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/7.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 8 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/3.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow carousel-control-prev" type="button" data-bs-target="#watchAgainCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="arrow carousel-control-next" type="button" data-bs-target="#watchAgainCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+</section>
+<section id="newRelease" class="movieSection container-fluid">
+    <div class="row">
+        <h2>new release</h2>
+        <div id="newReleaseCarousel" class="movieCarousel carousel slide">
+            <div class="carousel-inner d-flex">
+                <div class="carousel-item active d-flex">
+                    <div class="movieCard card col-lg-2 col-md-6 col-12"> <!-- card 1 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/12.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 2 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/13.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 3 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/14.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 4 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/15.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 5 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/16.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 6 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/17.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 7 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/18.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 8 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="arrow carousel-control-prev" type="button" data-bs-target="#newReleaseCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="arrow carousel-control-next" type="button" data-bs-target="#newReleaseCarousel"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
