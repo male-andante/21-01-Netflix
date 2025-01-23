@@ -1,11 +1,16 @@
 /** -- DESIGN SYSTEM -- **/
 
-body{
-    background: black;
-}
+/*body{
+    background: #141414;
+}*/
 
 p, h1, h2, h3, h4, h5, h6, a, i {
     color: white!important;
+}
+
+h2{
+    font-size: 1.3em;
+    margin-bottom: 0.8em;
 }
 
 
@@ -33,9 +38,7 @@ nav .navbar-brand > img{
 .avatar {
     border-radius: 50%;
     width: 40px;
-    /* Cambia in base alla dimensione desiderata */
     height: 40px;
-    /* Mantieni proporzioni */
     overflow: hidden;
 }
 
@@ -43,22 +46,101 @@ nav .navbar-brand > img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Mantiene il rapporto d'aspetto */
 }
 
 
 /** -- FILTER BAR -- **/
 
+#filterBar a.nav-link{
+    background-color: black;
+    border: 1px solid   white;
+    padding: 0.5em;
+    font-size: 0.8em;
+}
 
-/** -- TRENDING -- **/
+#filterBar ul.dropdown-menu.show{
+    border-radius: 0;
+    background-color: black;
+    border: 1px solid white;
+    padding: 0;   
+}
+
+#filterBar ul.dropdown-menu.show a.dropdown-item{
+    border-bottom: 1px solid;
+    text-transform: capitalize;
+    font-size: 0.8em;
+}
+
+#filterBar ul.dropdown-menu.show a.dropdown-item:hover{
+    color: black!important;
+}
+
+#filterBar ul.dropdown-menu.show li:nth-last-of-type(a){
+    border-bottom: 0;
+}
+
+
+
+/** -- CAROUSEL -- **/
+
+#trending{
+    margin: 1.3em 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    /*transition: background 0.3s linear;*/
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50%;
+    height: 50%;
+}
+
+#trendingCarousel {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.carousel-inner {
+    gap: 8px; 
+    overflow: visible;/* Spazio tra le slide */
+}
+
+.carousel-item {
+   flex: 0 0 85%;  /* Ogni elemento occupa il 85% dello spazio visibile */
+    /*transition: transform 0.5s ease-in-out;*/
+}
 
 .movieCard{
     border: 0;
     border-radius: 0;
+    margin: 0.2em;
+    background-color: transparent;
+   /* position: relative;*/
+
 }
 
 .movieCard img{
     border-radius: 0;
+    height: auto;
 }
 
 .card-body{
@@ -68,9 +150,9 @@ nav .navbar-brand > img{
 
 .card-body > h5{
     position: absolute;
-    top: 75%;
+    top: 80%;
     background-color: red;
-    padding: 0.5em;
+    padding: 0.4em;
     text-transform: uppercase;
     font-size: 0.7em;
 }

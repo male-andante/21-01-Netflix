@@ -8,7 +8,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/netflix.css">
 </head>
-<body>
+<body class="mx-2 bg-dark">
     <header>
         <nav class="navbar navbar-expand-lg row">
             <div class="container-fluid">
@@ -21,32 +21,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown"> <!-- home -->
-                            <a class="nav-link dropdown-toggle" aria-current="page" href="#TV shows" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" aria-current="page" href="#">
                                 home
                             </a>
                         </li>
                         <li class="nav-item dropdown"> <!-- tv shows -->
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" href="#">
                                 TV shows
                             </a>
                         </li>
                         <li class="nav-item dropdown"> <!-- movies -->
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" href="#">
                                 movies
                             </a>
                         </li>
                         <li class="nav-item dropdown"> <!-- recently -->
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" href="#">
                                 recently added
                             </a>
                         </li>
                         <li class="nav-item dropdown"> <!-- my list -->
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link" href="#">
                                 my list
                             </a>
                         </li>
@@ -64,28 +59,95 @@
         </nav>
     </header>
     <main>
-<section id="filterBar"></section>
-<section id="recommended" class="container p-5">
+<section id="filterBar">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">TV Shows</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  genres
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">thriller</a></li>
+                  <li><a class="dropdown-item" href="#">horror</a></li>
+                  <li><a class="dropdown-item" href="#">comedy</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+<section id="trending" class="container-fluid">
     <div class="row">
         <h2>trending now</h2>
-        <div id="TrendingCarousel" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item d-flex">
-                    <div class="movieCard card">
+        <div id="trendingCarousel" class="carousel slide">
+            <div class="carousel-inner d-flex">
+                <div class="carousel-item active d-flex">
+                    <div class="movieCard card col-lg-2 col-md-6 col-12"> <!-- card 1 -->
                         <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
                         <div class="card-body">
                             <img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">
                             <h5>new episodes</h5>
                         </div>
                     </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 2 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/2.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 3 -->
+                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/3.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 4 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/4.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 5 -->
+                        <!--<img src="../assets/imgs/movies/1.png" class="card-img-top" alt="...">-->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/5.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 6 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/6.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 7 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/7.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
+                    <div class="movieCard card col-lg-2 col-md-6 col-12">  <!-- card 8 -->
+                        <div class="card-body">
+                            <img src="../assets/imgs/movies/7.png" class="card-img-top" alt="...">
+                            <h5>new episodes</h5>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="arrow carousel-control-prev" type="button" data-bs-target="#recommendedCarousel"
+            <button class="arrow carousel-control-prev" type="button" data-bs-target="#trendingCarousel"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="arrow carousel-control-next" type="button" data-bs-target="#recommendedCarousel"
+            <button class="arrow carousel-control-next" type="button" data-bs-target="#trendingCarousel"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
