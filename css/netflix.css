@@ -85,6 +85,8 @@ nav .navbar-brand > img{
 
 .movieSection{
     margin: 2rem 0;
+    overflow: hidden;
+    padding: 1em;
 }
 
 .carousel-control-prev,
@@ -114,7 +116,7 @@ nav .navbar-brand > img{
 }
 
 .movieCarousel {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 
 }
@@ -134,8 +136,17 @@ nav .navbar-brand > img{
     border-radius: 0;
     margin: 0.2em;
     background-color: transparent;
+    transition: transform 0.3s linear, box-shadow 0.3s ease ;
+    z-index: 2;
    /* position: relative;*/
 
+}
+
+
+.movieCard:hover {
+    transform: scale(1.15);
+    box-shadow: 0px 0px 24px 4px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 
 .movieCard img{
