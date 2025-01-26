@@ -11,8 +11,9 @@ body{
     font-family: 'Geist', Helvetica, sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, h6, a, i {
+p, h1, h2, h3, h4, h5, h6, a, i, #socialIcons i, .linksList a, footer span {
     color: white!important;
+    opacity: 0.8;
 }
 
 h2{
@@ -78,6 +79,12 @@ nav .navbar-brand > img{
     text-transform: uppercase;
     color: white;
 }
+
+header #headerSupportedContent{
+    z-index: 100;
+    background-color: #141414;
+}
+
 
 
 /** -- FILTER BAR -- **/
@@ -213,13 +220,13 @@ nav .navbar-brand > img{
 
 /** -- FOOTER -- **/
 
-footer{
-    width: 50%;
+footer.container-fluid{
+    width: 70%;
     margin: auto;
 }
 
 footer > .row{
-    padding: 1rem 4rem;
+    padding: 1rem;
 }
 
 footer span{
@@ -232,10 +239,6 @@ footer span{
     padding: 0.5rem 0;
     justify-content: flex-start;
     gap: 1rem;
-}
-
-#socialIcons i, .linksList a, footer span{
-    color: lightgray!important;
 }
 
 #links{
@@ -252,6 +255,8 @@ footer span{
 
 .linksList a{
     padding: 0.3em 0;
+    font-size: 0.8rem;
+    display: inline-block;
 }
 
 #serviceCode{
@@ -267,13 +272,37 @@ footer span{
 }
 
 @media screen and (max-width: 768px) {
-    footer > .row{
-        padding: 1rem;
-    }  
-
     #links{
         gap: 1rem;
     }
+
+    footer.container-fluid{
+        width: 100%;
+    }
+
+    header #headerSupportedContent{
+        padding: 0;
+    }
+
+    header #headerSupportedContent ul{
+        padding: 0 0.7rem;
+    }
+
+    #settings{
+    justify-content: flex-start;
+    padding: 0 0.7rem 0.7rem 0.7rem;
+    }
+    
+}
+
+#copyright {
+    padding: 0.3em 0;
+}
+
+#copyright *{
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 0 0.2rem;
 }
 
 
