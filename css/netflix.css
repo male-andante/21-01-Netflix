@@ -67,6 +67,7 @@ nav .navbar-brand > img{
     width: 36px;
     height: 36px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 #settings .avatar>img {
@@ -78,6 +79,7 @@ nav .navbar-brand > img{
 #settings span{
     text-transform: uppercase;
     color: white;
+    cursor: pointer;
 }
 
 header #headerSupportedContent{
@@ -85,6 +87,11 @@ header #headerSupportedContent{
     background-color: #141414;
 }
 
+.bi.bi-list{
+    color: white;
+    font-size:1.3em;
+    cursor: pointer;
+}
 
 
 /** -- FILTER BAR -- **/
@@ -93,11 +100,19 @@ header #headerSupportedContent{
     padding: 0 0.5rem;
 }
 
+#filterBar .navbar-brand{
+    cursor: default;
+    font-weight: 600;
+    font-size: 1.6em;
+    opacity: 1;
+}
+
 #filterBar a.nav-link{
     background-color: black;
     border: 1px solid   white;
     padding: 0.5em;
     font-size: 0.8em;
+    display: inline-block;
 }
 
 #filterBar ul.dropdown-menu.show{
@@ -185,6 +200,7 @@ header #headerSupportedContent{
     background-color: transparent;
     transition: transform 0.3s linear, box-shadow 0.3s ease ;
     z-index: 2;
+    cursor: pointer;
    /* position: relative;*/
 
 }
