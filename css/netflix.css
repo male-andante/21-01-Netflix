@@ -5,29 +5,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&display=swap');
 
-@media screen and (max-width: 768px) {
-    #links{
-        gap: 1rem;
-    }
 
-    footer.container-fluid{
-        width: 100%;
-    }
-
-    header #headerSupportedContent{
-        padding: 0;
-    }
-
-    header #headerSupportedContent ul{
-        padding: 0 0.7rem;
-    }
-
-    #settings{
-    justify-content: flex-start;
-    padding: 0 0.7rem 0.7rem 0.7rem;
-    }
-    
-}
 
 
 body{
@@ -55,6 +33,56 @@ h1, h2, h3, h4, h5, h6, nav a.nav-link, .linksList a{
 
 a, i{
     cursor: pointer;
+}
+
+/* ANIMAZIONI - DECOMMENTARE PER ATTIVARE */
+
+@keyframes scroll {
+    from  {
+    opacity: 0;
+    pointer-events: none;}
+
+   to {
+        opacity: 1;
+    pointer-events: auto;
+    }
+}
+
+/* #watchAgain, #newRelease {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    animation: scroll 0.8s infinite alternate;
+  }
+
+ #newRelease{   
+    animation-delay: 3.5s;  
+} */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    #links{
+        gap: 1rem;
+    }
+
+    footer.container-fluid{
+        width: 100%;
+    }
+
+    header #headerSupportedContent{
+        padding: 0;
+    }
+
+    header #headerSupportedContent ul{
+        padding: 0 0.7rem;
+    }
+
+    #settings{
+    justify-content: flex-start;
+    padding: 0 0.7rem 0.7rem 0.7rem;
+    }
+    
 }
 
 
@@ -160,6 +188,19 @@ header #headerSupportedContent{
     border-bottom: 0;
 }
 
+#filterIcons{
+    gap: 0.8rem;
+    padding: 0 0.5rem;
+}
+
+#filterIcons i{
+    font-size: 1em;
+    border: 1px solid;
+    padding: 0.2em 0.3em;
+    width: 32px;
+    height: 32px;
+}
+
 
 
 /** -- CAROUSEL -- **/
@@ -169,6 +210,7 @@ header #headerSupportedContent{
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
   }
+
 
 
 .movieSection{
@@ -329,8 +371,4 @@ footer span{
 }
 
 
-@keyframes scroll {
-    from  {visibility: hidden;
-    opacity: 0;}
-}
 
