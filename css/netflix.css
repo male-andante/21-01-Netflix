@@ -59,31 +59,7 @@ a, i{
     animation-delay: 3.5s;  
 } */
 
-/* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
-    #links{
-        gap: 1rem;
-    }
-
-    footer.container-fluid{
-        width: 100%;
-    }
-
-    header #headerSupportedContent{
-        padding: 0;
-    }
-
-    header #headerSupportedContent ul{
-        padding: 0 0.7rem;
-    }
-
-    #settings{
-    justify-content: flex-start;
-    padding: 0 0.7rem 0.7rem 0.7rem;
-    }
-    
-}
 
 
 /** -- NAVBAR -- **/
@@ -370,4 +346,28 @@ footer span{
 }
 
 
+/* MEDIA QUERIES */
 
+@media screen and (max-width: 768px) {
+    #links{
+        gap: 1rem;
+    }
+
+    footer.container-fluid{
+        width: 100%;
+    }
+
+    header #headerSupportedContent{
+        padding: 0;
+    }
+
+    header #headerSupportedContent ul{
+        padding: 0 0.7rem;
+    }
+
+    #settings{
+    justify-content: flex-start;
+    padding: 0 0.7rem 0.7rem 0.7rem;
+    }
+    
+}
